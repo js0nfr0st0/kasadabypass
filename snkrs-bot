@@ -1,0 +1,98 @@
+# Nike app协议登录|how to login nike app |snkrs 协议登录|snkrs bot
+
+
+
+## nike app协议登录|snkrs 协议登录|snkrs 如何破盾|snkrs 破盾|nike 破盾|Nike 登录|nike bot|snkrs bot|snkrs 机器人|nike 机器人|nike 下单|QQ:80258153
+
+
+
+
+
+**联系方式**：->QQ 微信同号:80258153
+
+
+
+​	nike app登录方式是有多种，我们基本上主要说以下两种；
+
+1、nike app 协议方式登录；
+
+2、nike app 内存记录登录；
+
+第一种方式：--先看效果一
+
+图1
+[![gY1xQP.png](https://z3.ax1x.com/2021/05/09/gY1xQP.png)](https://imgtu.com/i/gY1xQP)
+
+
+
+以上就是登录成功的效果，目标是拿到Bearer的字符串，以备后续流程使用；本编不详谈后续流程，
+
+后续流程参考此帖：
+
+
+
+那我们需要什么呢？
+
+1、我们可以抓取一个login登录流程的数据包；
+
+[![gY3Fij.png](https://z3.ax1x.com/2021/05/09/gY3Fij.png)](https://imgtu.com/i/gY3Fij)
+
+
+
+我们可以通过数据包分析到；
+
+a、目前_abck,bmsz,这个是老生常谈的老问题了，在此不详细展开。俗称akamai问题，做web端的会比较常见；如果这里你通不过，会表现为403的返回状态码；
+
+b、另外需要关注：x-kpsdk-ct、x-kpsdk-cd 这两个如果处理不当会产生429的返回状态码；
+
+2、当以上的四点全部具备后，通过适当的模拟数据包，基本上就可以做到通过协议的方式登录；
+
+
+
+补充：（自己懂，过来装逼的请走开）
+
+自己做的过程中这里面还是有几点需要注意；
+
+1、如何准备abck，bmsz；这个如果规模化的话，确实还是个问题。这里要注意，当然如果你仅仅是测试，
+
+这个就你懂的会变成相对容易；
+
+2、x-kpsdk-cd 这个的原理其实不复杂，就是你从请求中也可以获取，然后他会有个post提交的方式去验证；
+
+但是这里不建议再去处理，为什么呢。因为基本上你的算法赶不上他到底更新；
+
+3、x-kpsdk-ct这个值是可以通过算法模拟的，还是相对容易。
+
+
+
+联系方式：->QQ 微信同号:80258153
+
+
+
+**往期文章:**
+
+《nike app 协议登录|how to login nike app》
+
+《如何破429问题|how to create x-kpsdk-ct x-kpsdk-cd》
+
+《akamai如何生成|how to create akamai sensor data》
+
+《nike web 协议登录|how to login nike web》
+
+
+
+----效果展示：
+
+[![gY3awD.png](https://z3.ax1x.com/2021/05/09/gY3awD.png)](https://imgtu.com/i/gY3awD)
+[![gY3dTe.png](https://z3.ax1x.com/2021/05/09/gY3dTe.png)](https://imgtu.com/i/gY3dTe)
+[![gY3UeO.png](https://z3.ax1x.com/2021/05/09/gY3UeO.png)](https://imgtu.com/i/gY3UeO)
+
+
+
+
+
+
+
+
+
+
